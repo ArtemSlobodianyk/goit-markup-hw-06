@@ -135,7 +135,7 @@ body {
 /* hero */
 .hero {
   background-image: url(../images/Header.svg);
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   text-align: center;
   margin-bottom: 94px;
@@ -471,6 +471,7 @@ body {
   height: 400px;
   background: #ffffff;
   border: 1px solid #585252;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .main-my-work .my-work {
   margin-right: 30px;
