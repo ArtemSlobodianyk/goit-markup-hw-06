@@ -294,15 +294,19 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 32px;
+  margin-bottom: 30px;
 }
 .link-icon {
+  color: gray;
   display: inline-flex;
   justify-content: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: aqua;
+  background-color: white;
   align-items: center;
+  border: 1px solid;
+  transition: background-color 150ms;
 }
 .icon {
   /* display: inline-block; */
@@ -316,6 +320,11 @@ body {
   justify-content: center;
   display: inline-flex;
   max-width: 30px;
+}
+.link-icon:hover,
+.link-icon:focus {
+  background-color: #75cef1;
+  border-color: #1739d3;
 }
 .unlist-our-team {
   margin: auto;
