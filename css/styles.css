@@ -62,7 +62,8 @@ body {
   margin-left: 0;
 }
 .site-nav a {
-  color: #2196f3;
+  color: #757575;
+  text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -101,7 +102,8 @@ body {
   margin-right: 0px;
 }
 .contact-nav-envelope a {
-  color: #2196f3;
+  color: #757575;
+  text-decoration: none;
 }
 .contact-nav-envelope a:hover,
 .contact-nav-envelope a:focus {
@@ -118,6 +120,7 @@ body {
 
 .contact-nav-telephone a {
   color: #757575;
+  text-decoration: none;
 }
 .contact-nav-telephone a:hover,
 .contact-nav-telephone a:focus {
@@ -289,7 +292,12 @@ body {
 }
 .list-our-work li {
   /* outline: 2px solid tomato; */
+  margin-right: 40px;
 }
+.list-our-work li:last-child {
+  margin-right: 0px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -604,6 +612,7 @@ body {
 }
 .contact-nav-envelope-two a {
   color: #2196f3;
+  text-decoration: none;
 }
 .contact-nav-envelope-two a:hover,
 .contact-nav-envelope-two a:focus {
@@ -620,6 +629,7 @@ body {
 }
 .contact-nav-telephone-two a {
   color: #757575;
+  text-decoration: none;
 }
 .contact-nav-telephone-two a:hover,
 .contact-nav-telephone-two a:focus {
@@ -650,7 +660,7 @@ body {
 }
 .footer-two-a {
   padding-left: 0px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .footer-three {
   margin-left: 70px;
@@ -690,6 +700,7 @@ body {
   color: rgba(10, 10, 10, 0.6);
   border-radius: 4px;
   background-color: rgb(183, 235, 235);
+  text-decoration: none;
 }
 .subscribe:hover,
 .subscribe:focus {
@@ -710,6 +721,7 @@ body {
   padding-right: 70px;
   border-radius: 4px;
   background-color: darkcyan;
+  text-decoration: none;
 }
 .goit {
   font-family: "Roboto";
