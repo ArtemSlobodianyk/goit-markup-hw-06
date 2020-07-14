@@ -5,6 +5,9 @@ body {
 :root {
   --hover-focus-color: #2196f3;
 }
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .page {
   margin-left: auto;
   margin-right: auto;
@@ -17,12 +20,13 @@ body {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+
   /* outline: 2px solid tomato; */
 }
 .logo {
@@ -49,7 +53,8 @@ body {
 .site-nav {
   display: flex;
   padding-left: 0px;
-  margin-left: 80px;
+  margin-left: 40px;
+  margin-bottom: 0;
 }
 .site-nav .item {
   display: flex;
@@ -69,6 +74,30 @@ body {
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--hover-focus-color);
+}
+.item-link {
+  position: relative;
+  display: block;
+  /* padding: 10px 20px; */
+  height: 50px;
+  text-decoration: none;
+  color: currentColor;
+}
+.item-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #2196f3;
+  border-radius: 5px;
+  left: 0;
+  bottom: 0px;
+  transform: scaleX(0);
+  transition: transform 250ms var(--timing-function);
+}
+.item-link:hover::after {
+  transform: scaleX(1);
 }
 
 .studio {
@@ -542,6 +571,9 @@ body {
 .site-nav-portfolio .item-portfolio:last-child {
   margin-right: 0px;
 }
+.main-my-work:hover {
+  opacity: 1;
+}
 .main-my-work {
   width: 1170px;
   height: 1300px;
@@ -552,11 +584,24 @@ body {
   flex-wrap: wrap;
 }
 .my-work {
+  position: relative;
   width: 370px;
   height: 400px;
   background: #ffffff;
   border: 1px solid #585252;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.my-work::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  opacity: 1;
+  transform: translateY(100%);
 }
 .main-my-work .my-work {
   margin-right: 30px;
