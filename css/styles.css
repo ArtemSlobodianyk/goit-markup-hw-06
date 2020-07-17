@@ -92,9 +92,9 @@ body {
   background-color: #2196f3;
   border-radius: 5px;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   transform: scaleX(0);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function); */
 }
 .item-link:hover::after {
   transform: scaleX(1);
