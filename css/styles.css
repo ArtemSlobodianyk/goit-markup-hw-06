@@ -574,9 +574,9 @@ body {
 .site-nav-portfolio .item-portfolio:last-child {
   margin-right: 0px;
 }
-.main-my-work:hover {
+/* .main-my-work:hover {
   opacity: 1;
-}
+} */
 .main-my-work {
   width: 1170px;
   height: 1300px;
@@ -587,6 +587,16 @@ body {
   flex-wrap: wrap;
 }
 .my-work {
+  margin-right: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   position: relative;
   width: 370px;
   height: 400px;
@@ -607,18 +617,6 @@ body {
 }
 .main-my-work:hover .my-work::before {
   transform: translateY(0);
-}
-.my-work {
-  margin-right: 30px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-decoration: none;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 .main-my-work .my-work:nth-child(3n) {
   margin-right: 0px;
