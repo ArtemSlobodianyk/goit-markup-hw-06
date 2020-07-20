@@ -531,8 +531,10 @@ body {
 /* ПОРТФОЛИО */
 .bottom:hover,
 .bottom:focus {
-  color: var(--hover-focus-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
+
 .bottom {
   display: inline-block;
   font-family: "Roboto";
@@ -541,8 +543,12 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #212121;
-  padding: 6px 22px;
+  padding: 12px 44px;
   min-width: 110px;
+  text-decoration: none;
+  border-radius: 5px;
+  /* background-color: darkgoldenrod; */
+  transition: background-color 500ms;
 }
 .main-site-nav-portfolio {
   margin-top: 90px;
@@ -558,9 +564,9 @@ body {
 }
 .site-nav-portfolio .item-portfolio {
   margin-right: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #f5f4fa;
-  padding: 6px 22px;
+  /* padding: 6px 22px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -589,11 +595,6 @@ body {
 .my-work {
   margin-right: 30px;
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-decoration: none;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -602,21 +603,70 @@ body {
   height: 400px;
   background: #ffffff;
   border: 1px solid #585252;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
-.my-work::before {
-  display: inline-block;
-  content: "";
+/* .my-work::before {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 100px;
+  content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.5s transform;
+} */
+/* .my-work:hover::before {
+  height: 100%;
+  opacity: 1;
+  transform: translateY(0%);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+} */
+.my-work-hover {
+  position: relative;
+  width: 370px;
+  height: 300px;
+}
+.my-work-hover::before {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 60px;
+  content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
-  /* opacity: 0; */
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
   transform: translateY(100%);
-  transition: 1s;
+  transition: 0.5s transform;
 }
-.main-my-work:hover .my-work::before {
-  transform: translateY(0);
+.my-work-hover:hover::before {
+  height: 100%;
+  opacity: 1;
+  transform: translateY(0%);
+  box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.25);
 }
 .main-my-work .my-work:nth-child(3n) {
   margin-right: 0px;
