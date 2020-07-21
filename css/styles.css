@@ -91,6 +91,7 @@ body {
   text-decoration: none;
   color: currentColor;
 }
+/* статическое подчеркивание кнопки */
 .item-link-current::after {
   position: absolute;
   content: "";
