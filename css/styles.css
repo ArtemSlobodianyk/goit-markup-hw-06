@@ -26,35 +26,39 @@ body {
   opacity: 1;
 }
 .modal {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 581px;
-  min-width: 528px;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  background-color: white; */
+  position: fixed;
+  background-color: white;
+  width: 528px;
+  height: 581px;
+  left: 39%;
+  border-radius: 5px;
 }
 .modal-close {
   position: absolute;
-  /* bottom: 100%; */
+  bottom: 100%;
   left: 100%;
 }
 .modal-name {
   display: block;
   margin-bottom: 30px;
+  margin-top: 40px;
   font-weight: 700;
   font-size: 20px;
 }
 .input-label {
   position: absolute;
+  padding-top: 2px;
+  left: 200px;
 }
 .modal-input {
   position: relative;
   display: block;
   margin-bottom: 30px;
+}
+.modal-icon {
+  position: absolute;
+  top: 2px;
+  right: 333px;
 }
 .page {
   margin-left: auto;
