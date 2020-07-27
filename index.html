@@ -64,16 +64,15 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a class="to-order-service" data-modal-open href=""
+          <a class="to-order-service cursorPointer" data-modal-open
             >Заказать услугу</a
           >
           <!-- Модальное окно -->
           <div class="backdrop" data-modal>
             <div class="modal">
               <a
-                class="modal-close"
+                class="modal-close cursorPointer"
                 data-modal-close
-                href="#"
                 aria-label="Закрыть модальное окно"
               >
                 <svg class="icon" width="18" hight="18">
@@ -84,9 +83,43 @@
                 >Оставте нам свои данные и мы вам перезвоним</b
               >
               <form>
-                <label class="modal-input"></label>
-                <input class="input-field" type="text" name="name" />
-                <span class="input-label">Имя</span>
+                <label class="modal-input">
+                  <input class="input-field" type="text" name="name" />
+                  <span class="input-label">Имя</span>
+                </label>
+                <label class="modal-input">
+                  <input class="input-field" type="text" name="name" />
+                  <span class="input-label">Телефон</span>
+                </label>
+                <label class="modal-input">
+                  <input class="input-field" type="text" name="name" />
+                  <span class="input-label">Почта</span>
+                </label>
+                <textarea
+                  class="input-field textarea"
+                  name="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Комментарий"
+                ></textarea>
+                <label class="modal-input checkbox-field">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    value="agreement"
+                    name="agreement"
+                  />
+                  <span class="agree"></span>
+                  <span
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="rules" href="#">Условия договора</a></span
+                  >
+                </label>
+                <div>
+                  <button type="submit" class="button modal-button">
+                    <span class="subscribe">Отправить</span>
+                  </button>
+                </div>
               </form>
             </div>
           </div>

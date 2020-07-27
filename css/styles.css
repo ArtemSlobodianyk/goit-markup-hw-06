@@ -8,6 +8,54 @@ body {
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop {
+  /* position: fixed; */
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  min-height: 581px;
+  min-width: 528px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.is-hidden {
+  opacity: 1;
+}
+.modal {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 581px;
+  min-width: 528px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: white; */
+}
+.modal-close {
+  position: absolute;
+  /* bottom: 100%; */
+  left: 100%;
+}
+.modal-name {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.input-label {
+  position: absolute;
+}
+.modal-input {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
 .page {
   margin-left: auto;
   margin-right: auto;
@@ -235,6 +283,9 @@ body {
   border-radius: 4px;
   background-color: #2196f3;
   padding: 10px 34px;
+}
+.cursorPointer:hover {
+  cursor: pointer;
 }
 .to-order-service apage:hover,
 .to-order-service a:focus {
