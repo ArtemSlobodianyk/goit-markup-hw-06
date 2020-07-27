@@ -64,22 +64,30 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a class="to-order-service" href="">Заказать услугу</a>
+          <a class="to-order-service" data-modal-open href=""
+            >Заказать услугу</a
+          >
           <!-- Модальное окно -->
-          <div class="backdrop">
+          <div class="backdrop" data-modal>
             <div class="modal">
               <a
                 class="modal-close"
+                data-modal-close
                 href="#"
                 aria-label="Закрыть модальное окно"
-                 <svg width="18" hight="18">
-                   <use href="images/sprites.svg#close-modal"></use>
-                 </svg>
-              ></a>
+              >
+                <svg class="icon" width="18" hight="18">
+                  <use xlink:href="images/sprites.svg#close-modal" />
+                </svg>
+              </a>
               <b class="modal-name"
                 >Оставте нам свои данные и мы вам перезвоним</b
               >
-             
+              <form>
+                <label class="modal-input"></label>
+                <input class="input-field" type="text" name="name" />
+                <span class="input-label">Имя</span>
+              </form>
             </div>
           </div>
         </div>
@@ -355,5 +363,6 @@
       </div>
       <p class="goit conteiner">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
