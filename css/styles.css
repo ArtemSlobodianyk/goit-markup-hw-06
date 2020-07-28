@@ -41,7 +41,7 @@ body {
 }
 .modal-name {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 40px;
   font-weight: 700;
   font-size: 20px;
@@ -50,6 +50,7 @@ body {
   position: absolute;
   padding-top: 15px;
   left: 70px;
+  transition: transform 250ms; /*делает плавный сдвиг коментов */
 }
 .input-field {
   padding-left: 42px;
@@ -66,6 +67,16 @@ body {
   position: absolute;
   top: 15px;
   left: 40px;
+}
+/* Сдвигает коменты полей вверх (имя.телефон.почта) */
+/* Нижняя строка запрещает возврат коментов */
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+  color: #2196f3;
+  transform: translateY(-120%);
+}
+.input-field:focus ~ .modal-icon {
+  color: #f32121;
 }
 .page {
   margin-left: auto;
