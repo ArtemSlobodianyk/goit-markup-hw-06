@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body class="page">
     <!--Шапка сайта-->
     <header class="page-header">
@@ -141,7 +142,7 @@
                   >
                 </label>
                 <div>
-                  <button class="subscribe">
+                  <button class="subscribe-button-mod">
                     <span>Отправить</span>
                   </button>
                 </div>
@@ -411,14 +412,19 @@
             </li>
           </ul>
         </div>
-        <form>
-          <span class="subscr"
-            ><label class="labelSubscr join">asfasfasfs</label
-            ><input type="text" name="email"
-          /></span>
-          <span class="footer-three"
-            ><input class="subscribe" type="submit"
-          /></span>
+        <form class="one">
+          <span class="subscr">
+            <label class="labelSubscr join">Подпишитесь на рассылочку</label>
+            <input
+              class="input-footer"
+              type="text"
+              name="email"
+              placeholder="E-mail"
+            />
+          </span>
+          <span class="subscr">
+            <input class="subscribe-button" type="submit" value="Подписаться" />
+          </span>
         </form>
       </div>
       <p class="goit conteiner">2020 | Developed by GoIT Students</p>

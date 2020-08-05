@@ -85,6 +85,23 @@ body {
   top: 10px;
   left: 40px;
 }
+.subscribe-button-mod {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  display: flex;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-left: 150px;
+  padding-top: 20px 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 4px;
+  background-color: #2196f3;
+  transition: var(--hover-focus-color);
+}
 
 /* Сдвигает коменты полей вверх (имя.телефон.почта) */
 /* Нижняя строка запрещает возврат коментов */
@@ -541,9 +558,7 @@ body {
 .unlist-our-team li:last-child {
   margin-right: 0;
 }
-.unlist-our-team li {
-  /* outline: 2px solid tomato; */
-}
+
 .list-our-team {
   background: #edeeea;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -807,6 +822,14 @@ body {
   padding-top: 50px;
   padding-bottom: auto;
 }
+.footer-two {
+  margin-left: 70px;
+  margin-top: 40px;
+}
+.footer-two-a {
+  padding-left: 0px;
+  margin-top: 0px;
+}
 .logo-white {
   color: #ffffff;
 }
@@ -854,19 +877,7 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-two {
-  margin-left: 70px;
-  margin-top: 40px;
-}
-.footer-two-a {
-  padding-left: 0px;
-  margin-top: 0px;
-}
-.footer-three {
-  margin-left: 70px;
-  margin-top: 40px;
-  padding-top: 54px;
-}
+
 .footer-four {
   display: block;
   clear: both;
@@ -908,19 +919,18 @@ body {
   color: black;
 }
 
-.subscribe {
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #2196f3;
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 50px;
-  display: flex;
+  display: inline-block;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 150px;
-  padding-top: 20px 50px;
-  padding-left: 70px;
-  padding-right: 70px;
+  /* margin-left: 465px; */
   border-radius: 4px;
   background-color: #2196f3;
   transition: var(--hover-focus-color);
@@ -944,8 +954,23 @@ body {
   padding-right: 15px;
 }
 .subscr {
+  margin-left: 15px;
   display: inline-block;
 }
 .labelSubscr {
+  padding-bottom: 20px;
   display: block;
+}
+.one {
+  margin-top: 50px;
+  margin-left: 135px;
+}
+.input-footer {
+  width: 358px;
+  height: 50px;
+  font-family: "Roboto";
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
